@@ -1,0 +1,8 @@
+p {
+  margin: 1rem 3rem;
+}
+
+button#showFormula {
+  display: block;
+  margin-top: 3rem;
+}
