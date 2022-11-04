@@ -6,3 +6,22 @@ button#showFormula {
   display: block;
   margin-top: 3rem;
 }
+
+button#hinnto {
+  display: block;
+  margin-top: 3rem;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: skyblue;
+    align-items: center;
+}
+
+.title {
+    margin-right: 3em;
+    margin-left: 10em;
+    color: white;
+}

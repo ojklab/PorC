@@ -1,15 +1,30 @@
 PetiteVue.createApp({
   pattern: [
     {
-      name: '役職を選ぶ',
+      name: '異なる役職を選ぶ',
       unit: '人',
       c_p: 'C'
     },
     {
-      name: '物を一列に並べる',
+      name: '物・人を一列に並べる',
       unit: '個',
       c_p: 'P'
-    }
+    },
+    {
+      name: '物・人を円に並べる',
+      unit: '個',
+      c_p: 'C'
+    },
+    {
+      name: 'ペアをつくる',
+      unit: '人',
+      c_p: 'C'
+    },
+    {
+      name: 'カードを選んで整数をつくる',
+      unit: '枚',
+      c_p: 'P'
+    },      
   ],
   selectedID: 99,
   setForm() {
@@ -43,3 +58,4 @@ PetiteVue.createApp({
     this.showResult = true;
   }
 }).mount();
+

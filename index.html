@@ -7,7 +7,14 @@
     <title>順列／組み合わせ選択アプリ</title>
     <link href="style.css" rel="stylesheet" />
   </head>
+    
   <body>
+      
+    <header>
+        <h1 class="title">タイトル</h1>
+    </header>
+      
+      
     <p>
       パターン選択<br />
       <select v-model="selectedID" @change="setForm">
@@ -22,16 +29,30 @@
       {{unit}} から
       <input id="" v-model="k" />
       {{unit}} 選ぶ
-      <button id="showFormula" @click="showFormula">計算式を表示</button>
+        
+     <button id="showFormula" @click="showFormula">計算式を表示</button>
     </p>
 
     <p v-if="error.flag">
       {{error.msg}}
       <button @click="error.flag = false">OK</button>
     </p>
-
-    <p v-if="showResult"><sub>{{n}}</sub>{{c_p}}<sub>{{k}}</sub></p>
-
+      
+    <p v-if="showResult"><sub>{{n}}</sub>{{c_p}}<sub>{{k}}</sub>
+    </p>
+    
+      <p>
+      <button id="hinnto" @click="hinnto">ヒント</button>
+      </p>
+      
+      <p v-if="hinnto">
+        nPr＝n(n-1)(n-2)・・・(n-r+1)
+      </p>
+      <p>
+        nCr＝{n(n-1)(n-2)・・・(n-r+1)}/r(r-1)(r-2)・・・3・2・1
+      </p>
+      
+      
     <script src="https://unpkg.com/petite-vue"></script>
     <script src="script.js"></script>
   </body>
